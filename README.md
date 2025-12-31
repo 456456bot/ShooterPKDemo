@@ -1,3 +1,8 @@
+提醒：本项目使用了插件AutoFootstep（可在UE Fab下载），需要安装，否则可能无法正常运行；
+本项目使用新版的MSVC会报错
+*ConcurrentLinearAllocator.h(31): error C4668: ‘__has_feature’ is not defined as a preprocessor macro, replacing with ‘0’ for ‘#if/#​elif’*
+参考[更新Visual Studio后UE编译报错问题](https://www.bilibili.com/opus/1037726650659241989)回退MSVC版本解决。
+
 # 基于UE5.1版本官方第一人称模板制作的简单FPS Demo大作业报告
 
 ### 作业简介
