@@ -1,0 +1,21 @@
+# UE 编译产生的垃圾
+Binaries/*
+Intermediate/*
+Saved/*
+DerivedDataCache/*
+Build/*
+
+# VS 工程文件
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+
+# 插件中的垃圾 (如果用了插件)
+Plugins/*/Binaries/*
+Plugins/*/Intermediate/*
