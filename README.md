@@ -1,13 +1,9 @@
-**提醒**：本项目使用了插件AutoFootstep（可在UE Fab下载），需要安装，否则可能无法正常运行；
-**提醒**：本项目使用新版的MSVC会报错
-*ConcurrentLinearAllocator.h(31): error C4668: ‘__has_feature’ is not defined as a preprocessor macro, replacing with ‘0’ for ‘#if/#elif’*
-参考帖子《[更新Visual Studio后UE编译报错问题](https://www.bilibili.com/opus/1037726650659241989)》回退MSVC版本解决。
+提醒：本项目使用了插件AutoFootstep（可在UE Fab下载），需要安装，否则可能无法正常运行；
+本项目使用新版的MSVC会报错
+*ConcurrentLinearAllocator.h(31): error C4668: ‘__has_feature’ is not defined as a preprocessor macro, replacing with ‘0’ for ‘#if/#​elif’*
+参考[更新Visual Studio后UE编译报错问题](https://www.bilibili.com/opus/1037726650659241989)回退MSVC版本解决。
 
 # 基于UE5.1版本官方第一人称模板制作的简单FPS Demo大作业报告
-
-### 目录
-
-[toc]
 
 ### 作业简介
 
@@ -22,87 +18,21 @@
 另外游戏实现了额外内容如下：
 
 - [x] 实现了基于UMG的选择角色、选择模式、退出游戏、UI动画、信息展示等简单UI功能；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528666.png" alt="image-20260102062526517" style="zoom: 33%;" />
-
 - [x] 实现了基于UMG的消息播报，胜利/失败结算画面功能；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528667.png" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528668.png" alt="image-20260102062832412" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528669.png" alt="image-20260102064350522" style="zoom:33%;" />
-
 - [x] 实现了人物蹲跑跳的声音与动画效果，同时为角色添加了瞄准偏移效果；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528670.png" alt="image-20260102063218329" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528671.png" alt="image-20260102063238374" style="zoom:33%;" />
-
 - [x] 实现了两种自定义枪械，复用一套枪械组件；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528672.png" alt="image-20260102063329321" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528673.png" alt="image-20260102063400414" style="zoom:33%;" />
-
-- [x] 实现了枪械后坐力、弹道、换弹、自动换弹等枪械效果；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528674.png" alt="image-20260102063520447" style="zoom:33%;" />
-
+- [x] 实现了开枪瞄准、枪械后坐力、换弹、自动换弹等枪械效果；
 - [x] 实现子弹弹孔（贴花）；
-
-![image-20260102063821205](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528675.png)
-
-- [x] 实现了击中反馈准星、受伤音效、受伤动画、受伤HUD变化等效果；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528676.png" alt="image-20260102064537706" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528677.png" alt="image-20260102064319517" style="zoom:33%;" />
-
-- [x] 实现了血条组件与血量组件，二者通过事件自动绑定，且复用到所有角色、UI、重要可破坏物体上；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528678.png" alt="image-20260102064944056" style="zoom: 50%;" />
-
+- [x] 实现了击杀反馈准星、音效、动画、HUD变化等效果；
+- [x] 实现了血条组件与血量组件，二者通过事件自动绑定，且复用到所有角色、UI、可破坏物体上；
 - [x] 实现了事件驱动的KDA统计与积分系统；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528679.png" alt="image-20260102065021943" style="zoom:33%;" />
-
 - [x] 实现了基于GC的可破坏物体，与相应视觉听觉效果；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528680.png" alt="image-20260102065155915" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528681.png" alt="image-20260102065429241" style="zoom:33%;" />
-
-- [x] 实现了泉水、火焰、铁块等可互动物体的恢复状态、灼烧角色、受力效果等交互功能；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528682.png" alt="image-20260102065453006" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528683.png" alt="image-20260102065508180" style="zoom:33%;" />
-
-- [x] 实现了完整的炸弹蓝图，包括安装炸弹、炸弹计时（带FX）、炸弹破坏物体等功能；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528684.png" alt="image-20260102065626315" style="zoom:33%;" />
-
-![image-20260102070019084](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528685.png)
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528686.png" alt="image-20260102065946369" style="zoom:33%;" />
-
+- [x] 实现了泉水、火焰、铁块等可互动物体；
+- [x] 实现了完整的炸弹蓝图，包括安装炸弹，炸弹破坏物体等功能；
 - [x] 基于场景互动物体制作了简单的解谜；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528687.png" alt="image-20260102070306968" style="zoom:33%;" />
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528688.png" alt="image-20260102070113297" style="zoom:33%;" />
-
 - [x] 通过行为树实现了三种不同类型的AI，可以自动寻路，切换武器，并攻击玩家；
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528689.png" alt="image-20260102070700655" style="zoom:50%;" />
-
-*三种角色分别通过激光步枪、激光短炮和尬舞来攻击玩家，分别造成物理攻击、物理攻击与精神污染*
-
-- [x] 为AI与玩家都制作了升级buff功能。玩家buff包括：填充生命值/子弹数目、获得额外生命值/子弹、武器升级（增加弹匣容量/提升射速/提升换弹速度等）、角色升级（增加移速/增加跳跃高度/增加跳跃次数等）。AI敌人buff包括：增加射击速度、提升生命值、增加敌人数量等；
+- [x] 为AI与玩家都制作了升级buff功能；
 - [x] 搭建太空战斗氛围并定义简单游戏背景，增强玩家代入感。
-
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528690.png" alt="image-20260102071343075" style="zoom:33%;" />
 
 最后，保证了游戏的全部必要事件、变量以及各种效果动画都网络同步。
 
@@ -166,11 +96,12 @@
 
 ### 现有不足
 
-现有的一些不足都是工程问题，因为时间精力的原因来不及解决。
+现有的一些不足基本都是工程问题，因为时间精力的原因来不及解决。
 
 1. 首先一个比较严重的问题就是：由于没有经验，直到打包项目后，遇到了加入多人游戏的问题，我才发现多人联机的创建游戏阶段逻辑与单机大不同，查询资料后明白我至少要做UI的创建和加入房间按钮，并且创建游戏会重新加载地图，这里头的逻辑也需要大量调整，由于时间与精力限制，我不得不放弃这方面修改，简单调整后，使用命令行的方式来在一台机器上录制演示视频；
 2. 脚步声音的问题：我使用了AutoFootstep插件，这是一个UE Fab中评分很高的自动添加脚步声的插件，但是虽然声音添加上去了（动画序列中），但是经常会出现突然没有脚步声的情况。没找到原因，我删除了脚步声Context中的内容（没有删除动画序列中的AnimNotify声音，因为修改的动画确实太多了），改为自己在程序中用移动距离判断播放声音，后续我的学习计划之一就是自己用动画序列的方式添加脚步声，看看这里面到底哪里出了问题；
-3. 剩下一个问题就是，AI太多的时候，会表现不正确，例如掏不出枪来，隔着很远的距离就focus到玩家身上等等。这些问题在开发阶段是没有的，只是在后来测试的时候，一次性添加了100个AI，就出现各种各样的问题，个人感觉是一些数据的传输频率过高，超过了带宽导致的问题，逻辑没问题，是网络跟不上。这种问题需要后期仔细优化，设计一些变量与逻辑的重写，所以我暂时只是把BTS的频率调低，并且减少AI数量，做了一个简单优化调整。
+3. 人物第一人称手臂在接触到可破坏物体的碎屑（Geometry Collection）时候会触发碰撞，反复上下横跳，但是我反复检查，都确认Mesh1P是NoCollision，包括上面绑定的炸弹、武器模型。这成为了一个未解之谜。
+4. 剩下一个问题就是，AI太多的时候，会表现不正确，例如掏不出枪来，隔着很远的距离就focus到玩家身上等等。这些问题在开发阶段是没有的，只是在后来测试的时候，一次性添加了100个AI，就出现各种各样的问题，个人感觉是一些数据的传输频率过高，超过了带宽导致的问题，逻辑没问题，是网络跟不上。这种问题需要后期仔细优化，设计一些变量与逻辑的重写，所以我暂时只是把BTS的频率调低，并且减少AI数量，做了一个简单优化调整。
 
 ### 项目总结
 
