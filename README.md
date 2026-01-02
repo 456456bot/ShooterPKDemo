@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 **提醒**：本项目使用了插件AutoFootstep（可在UE Fab下载），需要安装，否则可能无法正常运行；
 **提醒**：本项目使用新版的MSVC会报错
 *ConcurrentLinearAllocator.h(31): error C4668: ‘__has_feature’ is not defined as a preprocessor macro, replacing with ‘0’ for ‘#if/#elif’*
+
 参考帖子《[更新Visual Studio后UE编译报错问题](https://www.bilibili.com/opus/1037726650659241989)》回退MSVC版本解决。
-=======
-提醒：本项目使用了插件AutoFootstep（可在UE Fab下载），需要安装，否则可能无法正常运行；
-本项目使用新版的MSVC会报错
-*ConcurrentLinearAllocator.h(31): error C4668: ‘__has_feature’ is not defined as a preprocessor macro, replacing with ‘0’ for ‘#if/#​elif’*
-参考[更新Visual Studio后UE编译报错问题](https://www.bilibili.com/opus/1037726650659241989)回退MSVC版本解决。
->>>>>>> 1ef09f466bc99480d3d5156c0ae72746d54da53e
 
 # 基于UE5.1版本官方第一人称模板制作的简单FPS Demo大作业报告
 
@@ -26,86 +20,86 @@
 
 - [x] 实现了基于UMG的选择角色、选择模式、退出游戏、UI动画、信息展示等简单UI功能；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528666.png" alt="image-20260102062526517" style="zoom: 33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528666.png)
 
 - [x] 实现了基于UMG的消息播报，胜利/失败结算画面功能；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528667.png" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528667.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528668.png" alt="image-20260102062832412" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528668.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528669.png" alt="image-20260102064350522" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528669.png)
 
 - [x] 实现了人物蹲跑跳的声音与动画效果，同时为角色添加了瞄准偏移效果；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528670.png" alt="image-20260102063218329" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528670.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528671.png" alt="image-20260102063238374" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528671.png)
 
 - [x] 实现了两种自定义枪械，复用一套枪械组件；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528672.png" alt="image-20260102063329321" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528672.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528673.png" alt="image-20260102063400414" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528673.png)
 
 - [x] 实现了枪械后坐力、弹道、换弹、自动换弹等枪械效果；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528674.png" alt="image-20260102063520447" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528674.png)
 
 - [x] 实现子弹弹孔（贴花）；
 
-![image-20260102063821205](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528675.png)
+![![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528675.png)](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528675.png)
 
 - [x] 实现了击中反馈准星、受伤音效、受伤动画、受伤HUD变化等效果；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528676.png" alt="image-20260102064537706" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528676.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528677.png" alt="image-20260102064319517" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528677.png)
 
 - [x] 实现了血条组件与血量组件，二者通过事件自动绑定，且复用到所有角色、UI、重要可破坏物体上；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528678.png" alt="image-20260102064944056" style="zoom: 50%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528678.png)
 
 - [x] 实现了事件驱动的KDA统计与积分系统；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528679.png" alt="image-20260102065021943" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528679.png)
 
 - [x] 实现了基于GC的可破坏物体，与相应视觉听觉效果；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528680.png" alt="image-20260102065155915" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528680.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528681.png" alt="image-20260102065429241" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528681.png)
 
 - [x] 实现了泉水、火焰、铁块等可互动物体的恢复状态、灼烧角色、受力效果等交互功能；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528682.png" alt="image-20260102065453006" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528682.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528683.png" alt="image-20260102065508180" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528683.png)
 
 - [x] 实现了完整的炸弹蓝图，包括安装炸弹、炸弹计时（带FX）、炸弹破坏物体等功能；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528684.png" alt="image-20260102065626315" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528684.png)
 
-![image-20260102070019084](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528685.png)
+![![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528685.png)](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528685.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528686.png" alt="image-20260102065946369" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528686.png)
 
 - [x] 基于场景互动物体制作了简单的解谜；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528687.png" alt="image-20260102070306968" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528687.png)
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528688.png" alt="image-20260102070113297" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528688.png)
 
 - [x] 通过行为树实现了三种不同类型的AI，可以自动寻路，切换武器，并攻击玩家；
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528689.png" alt="image-20260102070700655" style="zoom:50%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528689.png)
 
 *三种角色分别通过激光步枪、激光短炮和尬舞来攻击玩家，分别造成物理攻击、物理攻击与精神污染*
 
 - [x] 为AI与玩家都制作了升级buff功能。玩家buff包括：填充生命值/子弹数目、获得额外生命值/子弹、武器升级（增加弹匣容量/提升射速/提升换弹速度等）、角色升级（增加移速/增加跳跃高度/增加跳跃次数等）。AI敌人buff包括：增加射击速度、提升生命值、增加敌人数量等；
 - [x] 搭建太空战斗氛围并定义简单游戏背景，增强玩家代入感。
 
-<img src="https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528690.png" alt="image-20260102071343075" style="zoom:33%;" />
+![](https://cdn.jsdelivr.net/gh/456456bot/MyPics@main/ShooterPKDemo/20260102075528690.png)
 
 最后，保证了游戏的全部必要事件、变量以及各种效果动画都网络同步。
 
@@ -158,13 +152,13 @@
 
 本小节，我将对一些关键技术点的开发细节进行说明，请老师批评指正。
 
-1. 人物、武器的逻辑，写在代码中，如模板一样，我在对模板代码进行修改调整的过程中，学习了使用UE宏对变量、函数调整的方法，同时学习了如何在代码中调用RPC，以及绑定代理事件。
-2. UE代码非常不稳定，容易直接把编辑器搞崩溃。许多次我在编辑器中打开的窗口都得手动重新打开，这个加载过程十分浪费时间。另外如果修改了component.cpp的变量后，使用live coding编译，会导致组件（只观察到组件）绑定好的变量全部失效，需要一个一个手动重新绑定，且大大增加了绑定可能出错的概率，所以只能选择从IDE重新生成项目。这样就导致效率低下，因此在考虑到开发时间的情况下，后续开发我都使用蓝图进行。
-3. 首先我要攻克的难关就是RPC，在与AI（Gemini）、教程、文档掰扯的过程中，我从最简单的“向服务器发送请求->服务器多播到所有客户端”这一套逻辑开始，逐渐了解到更多，包括：权限、Replicated变量、OnRep函数、GameMode等对象的存在位置等。同时也掌握更灵活的操作，例如使用服务器调用的函数直接call多播事件，一些例如AIManager的对象只存在于服务器，就可以完全不用管RPC，明确了客户端预测与 服务器仲裁的重要性，确保了伤害判定等关键逻辑在服务器执行等等。
-4. 然后是动画，这方面我浅浅学习了动画蓝图、调整动画序列、动画混合空间、动画蒙太奇、动画复用等内容，其中瞄准偏移是根据AI指导，自己摸索制作的功能，没有使用UE自带的瞄准偏移，而是使用代码获取玩家输入，最后应用到骨骼上进行调整。同时我学会了给骨骼添加插槽，并调整位置，使得动画正确。
-5. 武器组件中，本来开火的逻辑是在fire函数中写的，在刚接触RPC的时候，为了多端同步，我在这个地方消耗了许久。后来我决定将音效、动画的逻辑留在代码中，将生成子弹的逻辑放到蓝图中进行网络同步，最后顺利解决了问题。同时，我使用了UE的委托，这样在每个不同的武器蓝图中，就可以写各自的生成子弹逻辑，而不需要搞继承那一套（最开始继承TP_WeaponComponent的TP_ShotgunComponent，RPC一直跑不通，按照UE动不动就crash的尿性来看，虽然我还是初学者，但也个人非常怀疑这里面有bug）。
-6. AI的逻辑我使用行为树来控制，因为蓝图中有限的节点基本上没有什么好的效果。行为树的逻辑设置为：首先寻找一个随机的玩家，如果能找到，则查询其周围可达的地方，向其移动；一旦看到目标玩家，则掏出武器（平时不手持武器是为了移动得更快），移动到攻击范围内，则开火攻击（对于Dancer来说是开始表演跳舞）；玩家死亡，或者位置不可达，则选择另一名玩家。最开始我使用了基本的AIController，后来考虑到大规模战斗，又改用了改进导航系统的DetourCrowdAIController (DCAIC)。
-7. 关于角色的血量，最开始我没考虑太多，直接给角色代码中新建一个当前血量与最大血量，并在子弹碰撞逻辑中castto角色来调整。后来有了AI与其他可破坏物体，我写了HealthComponent来作为一个通用的血量管理器，其内部实现了事件HandleDamage来修改血量，同时我使用了UE自带的伤害系统，让任何有血量的物体各自实现灵活处理伤害。这样不仅可以考虑伤害来源、类型，还将逻辑完全解耦。之后，为了可视化其他角色的血量，我另外写了一个widget component，挂载到任何有HealthComponent 的物体上，并通过一个事件绑定关系，即可自动实时显示血条血量。
+1. 人物、武器的逻辑，写在代码中，如模板一样，我在对模板代码进行修改调整的过程中，学习了使用UE宏对变量、函数调整的方法，同时学习了如何在代码中调用RPC，以及绑定代理事件；
+2. UE代码非常不稳定，容易直接把编辑器搞崩溃。许多次我在编辑器中打开的窗口都得手动重新打开，这个加载过程十分浪费时间。另外如果修改了component.cpp的变量后，使用live coding编译，会导致组件（只观察到组件）绑定好的变量全部失效，需要一个一个手动重新绑定，且大大增加了绑定可能出错的概率，所以只能选择从IDE重新生成项目。这样就导致效率低下，因此在考虑到开发时间的情况下，后续开发我都使用蓝图进行；
+3. 首先我要攻克的难关就是RPC，在与AI（Gemini）、教程、文档掰扯的过程中，我从最简单的“向服务器发送请求->服务器多播到所有客户端”这一套逻辑开始，逐渐了解到更多，包括：权限、Replicated变量、OnRep函数、GameMode等对象的存在位置等。同时也掌握更灵活的操作，例如使用服务器调用的函数直接call多播事件，一些例如AIManager的对象只存在于服务器，就可以完全不用管RPC，明确了客户端预测与 服务器仲裁的重要性，确保了伤害判定等关键逻辑在服务器执行等等；
+4. 然后是动画，这方面我浅浅学习了动画蓝图、调整动画序列、动画混合空间、动画蒙太奇、动画复用等内容，其中瞄准偏移是根据AI指导，自己摸索制作的功能，没有使用UE自带的瞄准偏移，而是使用代码获取玩家输入，最后应用到骨骼上进行调整。同时我学会了给骨骼添加插槽，并调整位置，使得动画正确；
+5. 武器组件中，本来开火的逻辑是在fire函数中写的，在刚接触RPC的时候，为了多端同步，我在这个地方消耗了许久。后来我决定将音效、动画的逻辑留在代码中，将生成子弹的逻辑放到蓝图中进行网络同步，最后顺利解决了问题。同时，我使用了UE的委托，这样在每个不同的武器蓝图中，就可以写各自的生成子弹逻辑，而不需要搞继承那一套（最开始继承TP_WeaponComponent的TP_ShotgunComponent，RPC一直跑不通，按照UE动不动就crash的尿性来看，虽然我还是初学者，但也个人非常怀疑这里面有bug）；
+6. AI的逻辑我使用行为树来控制，因为蓝图中有限的节点基本上没有什么好的效果。行为树的逻辑设置为：首先寻找一个随机的玩家，如果能找到，则查询其周围可达的地方，向其移动；一旦看到目标玩家，则掏出武器（平时不手持武器是为了移动得更快），移动到攻击范围内，则开火攻击（对于Dancer来说是开始表演跳舞）；玩家死亡，或者位置不可达，则选择另一名玩家。最开始我使用了基本的AIController，后来考虑到大规模战斗，又改用了改进导航系统的DetourCrowdAIController (DCAIC)；
+7. 关于角色的血量，最开始我没考虑太多，直接给角色代码中新建一个当前血量与最大血量，并在子弹碰撞逻辑中castto角色来调整。后来有了AI与其他可破坏物体，我写了HealthComponent来作为一个通用的血量管理器，其内部实现了事件HandleDamage来修改血量，同时我使用了UE自带的伤害系统，让任何有血量的物体各自实现灵活处理伤害。这样不仅可以考虑伤害来源、类型，还将逻辑完全解耦。之后，为了可视化其他角色的血量，我另外写了一个widget component，挂载到任何有HealthComponent 的物体上，并通过一个事件绑定关系，即可自动实时显示血条血量；
 8. UMG方面，作为初学者我使用了Bind函数来实时更新数据，后来查询得知这种方式是在tick内运行，通过轮询来更新数据，非常消耗资源。于是后面我修改为绑定变量，外部修改变量的方式。
 
 ### 现有不足
@@ -178,4 +172,4 @@
 
 ### 项目总结
 
-通过本次项目大作业，我从UE小白变为了一个UE初学者，在这个过程中我学到了非常多的技能与技巧，对个人的提升很大。感谢鹅厂能够举办这次线上培训班，我不仅从各位老师的精彩授课中学到许多，更在最后大作业的项目实践中收获满满。这二十几天开发的日子虽然有点掉头发，但是我感觉非常充实与开心。祝自己的游戏开发道路越走越远，也祝菁英班的各位老师工作顺利、事业成功，祝菁英班未来越办越好！
+通过本次项目大作业，我从UE小白变为了一个UE初学者，在这个过程中我学到了非常多的技能与技巧，对个人的提升很大。感谢腾讯能够举办这次菁英班，我不仅从各位老师的精彩授课中学到许多，更在最后大作业的项目实践中收获满满。这二十几天开发的日子虽然有点掉头发，但是我感觉非常充实与开心。祝自己的游戏开发道路越走越远，也祝菁英班的各位老师工作顺利、事业成功，祝菁英班未来越办越好！
